@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" href="../css/toolbar.css">
+</head>
+
+<body>
+    <div class="header_bar">
+        <div class="top_bar">
+            <div class="comwidth">
+                <div class="left_area">
+                    <a href="#" class="collection">收藏</a>
+                </div>
+                <div class="right_area">
+                    欢迎来到慕课网！<a href="#">[登录]</a><a href="#">[免费注册]</a>
+                </div>
+            </div>
+        </div>
+        <div class="logo_bar">
+            <div class="comwidth">
+                <div class="logo fl">
+                    <a><img alt="logo" src="../images/logo.png" /></a>
+                </div>
+                <div class="step_box fr">
+                    <div class="step01">
+                        <div class="step01_logo active">1</div>
+                        <p class="active">我的购物车</p>
+                    </div>
+                    <div class="jindu01 jindu active"></div>
+                    <div class="step01">
+                        <div class="step02_logo">2</div>
+                        <p>填写核对订单</p>
+                    </div>
+                    <div class="jindu02 jindu"></div>
+                    <div class="step01">
+                        <div class="step03_logo">3</div>
+                        <p>订单提交成功</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="car_content comwidth">
+        <div class="shouhuo_info">
+            <div class="shouhuo_tit">
+                收货信息
+            </div>
+            <div class="shouhuo_con">
+                <ul class="shouhuo_ul">
+                    <li><span><em>*</em>选择地区:</span>
+                        <input class="diqu" type="text" value="苏州苏 工业园区 五环内" />
+                    </li>
+                    <li><span><em>*</em>详细地址:</span>
+                        <input class="xiangx" type="text" value="最多输入26个字符" />
+                    </li>
+                    <li><span><em>*</em>收货人:</span>
+                        <input type="text" value="最多10个汉子" />
+                    </li>
+                    <li><span><em>*</em>手机:</span>
+                        <input type="text" value="如：12345644333" /><i>或固定电话：</i>
+                        <input type="text" value="区号" /><i>－</i>
+                        <input type="text" value="电话号码" /><i>－</i>
+                        <input type="text" value="分机号（可选）" />
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <input type="button" value="确认收货地址" class="shouhuo_btn" />
+            </div>
+        </div>
+        <div class="shouhuo_info">
+            <div class="shouhuo_tit">
+                支付方式
+            </div>
+            <div class="shouhuo_con zhifu_con">
+                <form>
+                    <input type="radio" name="zhifu" /><span class="zhiffans">微信支付</span><span class="weixintux">用微信扫一扫就能支付！</span>
+                    <br/>
+                    <input type="radio" name="zhifu" /><span class="zhiffans">活到付款</span><span>送货上门再付款，0风险！</span>
+                </form>
+            </div>
+        </div>
+        <div class="shouhuo_info">
+            <div class="shouhuo_tit">
+                发票信息
+            </div>
+            <div class="shouhuo_con">
+                <div class="check_fapiao">
+                    <input type="checkbox" />需要发票
+                </div>
+                <ul class="shouhuo_ul fapiao_con">
+                    <li>
+                        <span><em>*</em>发票类型:</span>
+                        <form>
+                            <select>
+                                <option>商业零售发票</option>
+                                <option>个人</option>
+                            </select>
+                        </form>
+                    </li>
+                    <li>
+                        <span><em>*</em>发票抬头:</span>
+                        <form>
+                            <select>
+                                <option>个人</option>
+                                <option>商业零售发票</option>
+                            </select>
+                        </form>
+                        <input class="xiangx" type="text" value="xxx有限公司" />
+                    </li>
+                </ul>
+                <div>
+                    <input type="button" value="保存" class="shouhuo_btn fapiao_btn" />
+                    <input type="button" value="取消" class="shouhuo_btn fapiao_btn active" />
+                </div>
+            </div>
+        </div>
+        <div class="shouhuo_info clearfix">
+            <div class="shouhuo_tit">
+                送货清单
+                <a href="#" class="back_car">返回购物车</a>
+            </div>
+            <ul class="songhuo clearfix">
+                <li class="songhuo01">
+                    <p class="songhuo_p">商品名称</p>
+                    <div class="songhuo_img">
+                        <img alt="" src="../images/HTC.jpg" width="90px" height="90px" />
+                        <p class="songhuo_p01">海信点冰鲜久时哈珀（黑色）</p>
+                        <p class="songhuo_p02">赠品：漂亮的亮的亮的亮的美女</p>
+                    </div>
+                </li>
+                <li class="songhuo02">
+                    <p class="songhuo_p">单价</p>
+                    <p class="songhuo_p01">$1324.00</p>
+                </li>
+                <li class="songhuo03">
+                    <p class="songhuo_p">返现</p>
+                    <p class="songhuo_p01">$24.00</p>
+                </li>
+                <li class="songhuo04">
+                    <p class="songhuo_p">数量</p>
+                    <p class="songhuo_p01">1</p>
+                    <p class="songhuo_p02">1</p>
+                </li>
+                <li class="songhuo05">
+                    <p class="songhuo_p">小计</p>
+                    <p class="songhuo_p01 songhuo_jiage">$1324.00</p>
+                </li>
+            </ul>
+            <div class="yilv">
+                <p class="youyiyi_p">如果您有疑虑，请在此留言：</p>
+                <textarea class="youyiyi" rows="3" cols="180"></textarea>
+            </div>
+            <p class="notbuy">抱歉一下商品不能售卖电话 i u 饿哦好烦如此文化宫佛UI而晚饭过后俄如果和 iu 俄方韩国 v </p>
+            <div class="songhuo_img">
+                <img alt="" src="../images/HTC.jpg" width="90px" height="90px" />
+                <p class="songhuo_p01 songhuo_pp">海信点冰鲜久时哈珀（黑色）</p>
+                <p class="songhuo_p01 songhuo_pp">数量（1件）</p>
+                <p class="songhuo_p02 songhuo_pp songhuo_pp01">¥666.00</p>
+            </div>
+        </div>
+        <div class="shouhuo_info clearfix">
+            <div class="shouhuo_tit">
+                订单结算
+            </div>
+            <div class="dongji">
+                总计：<span>¥1234.00</span>
+                <div>
+                    <input type="button" value="提交订单" class="shouhuo_btn zongji_btn" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="fir"><a>慕课简介</a><span>|</span><a>慕课公告</a><span>|</span> <a>招纳贤士</a><span>|</span> <a>联系我们</a><span>|</span>客服热线：400-675-1234</p>
+        <p class="las">Copyright © 2006 - 2014&nbsp;&nbsp;&nbsp;&nbsp;京东版权所有&nbsp;&nbsp;&nbsp;&nbsp;某市公安局xx分局备案号&nbsp;&nbsp;&nbsp;&nbsp;123456789</p>
+        <p><img alt="" src="../images/icons/copyright.png" /><img alt="" src="../images/icons/copyright.png" /><img alt="" src="../images/icons/copyright.png" /><img alt="" src="../images/icons/copyright.png" /></p>
+    </div>
+    <div class="toolbar">
+        <a href="javascript:;" class="toolbar_item tool_bar_weixin">
+            <span class="toolbar_layer"></span>
+        </a>
+        <a href="javascript:;" class="toolbar_item tool_bar_feedback"></a>
+        <a href="javascript:;" class="toolbar_item tool_bar_app">
+            <span class="toolbar_layer"></span>
+        </a>
+        <a href="javascript:;" class="toolbar_item tool_bar_top" id="backtop"></a>
+    </div>
+</body>
+</html>
